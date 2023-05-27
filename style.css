@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+img {
+  vertical-align: bottom;
+}
+
+.wrapper {
+  position: relative;
+  width: 10vw;
+}
+
+img.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform ease-out;
+  transform-origin: top right;
+}
+img.back1 {
+  width: 66.6%;
+  transition-duration: .2s;
+}
+img.back2 {
+  width: 33.3%;
+  transition-duration: .4s;
+}
+
+img.front {
+  opacity: 0.99;
+  width: 100%;
+}
+
+.wrapper:hover img.back1 {
+  transform: rotate(20deg);
+}
+.wrapper:hover img.back2 {
+  transform: rotate(50deg);
+}
